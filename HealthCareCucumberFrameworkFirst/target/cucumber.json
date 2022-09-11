@@ -1,0 +1,354 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-11T17:40:34.568Z",
+        "line": 3,
+        "name": "Verify  registration  form with  valid TestData",
+        "description": "",
+        "id": "verify-registration-functionality;verify--registration--form-with--valid-testdata",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2172521800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User open browzer",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_open_browzer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15423028000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User open url",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_open_url()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24006600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "validate url open",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.validate_url_open()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 178042000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on maxmize icon",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_click_on_maxmize_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8401975900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click on registerLink",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.User_click_on_registerLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21190800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should redirect to registrationPage",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.User_should_redirect_to_registrationPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 194299300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter name",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_enter_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196994400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enter mobileNo",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_enter_mobile_no()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214987400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enter email",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.User_enter_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 154023500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter patientage",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_enter_patientage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 213937900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User select country",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_select_country()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138184200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter password",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_enter_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139522300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter confirmPassword",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_enter_confirm_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138741300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter medicalProblem",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_enter_medical_problem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17427700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "scrollbaar  down",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.scrollbaar_down()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2232815200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click on RegisterBtn",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.user_click_on_RegisterBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 95904300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "validate loginRed button present on the page",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.validate_loginRed_button_present_on_the_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7454400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "page should redirected to confirmationPage",
+            "match": {
+              "location": "stepDefinations.RegistrationExcution.page_should_redirected_to_confirmation_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Registration Functionality",
+    "description": "",
+    "id": "verify-registration-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resource/features/Registration.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-11T17:41:04.679Z",
+        "line": 3,
+        "name": "Verify login with  valid credentials",
+        "description": "",
+        "id": "verify-login-and-logout;verify-login-with--valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 990812300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User click on login button",
+            "match": {
+              "location": "stepDefinations.LoginExcution.user_click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6790300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "validate login page url",
+            "match": {
+              "location": "stepDefinations.LoginExcution.validate_login_page_url()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 170141800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User entered  emaili Id",
+            "match": {
+              "location": "stepDefinations.LoginExcution.user_entered_emaili_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144226200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User entered Paswword",
+            "match": {
+              "location": "stepDefinations.LoginExcution.user_entered_paswword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4061005000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click on sign in button",
+            "match": {
+              "location": "stepDefinations.LoginExcution.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7001300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate home page url",
+            "match": {
+              "location": "stepDefinations.LoginExcution.validate_home_page_url()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validate text Treament package",
+            "match": {
+              "location": "stepDefinations.LoginExcution.validate_text_Treament_package()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "validate",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Login and Logout",
+    "description": "",
+    "id": "verify-login-and-logout",
+    "keyword": "Feature",
+    "uri": "file:src/test/resource/features/login.feature",
+    "tags": []
+  }
+]
