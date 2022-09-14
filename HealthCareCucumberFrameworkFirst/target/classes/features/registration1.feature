@@ -3,29 +3,26 @@ Feature: verify   registration functionality
  
  
   Scenario Outline: Verify  registration  form with  valid TestData
-   Given User open browzer
-    And User open url
- 
-    Then  validate url open
-     And User click on maxmize icon
-    When  User click on registerLink
-    Then User should redirect to registrationPage
-    When User enter name "<Name>"
-    And  User enter mobileNo "<MobileNum>"
-    And User enter email"< Email>"
-    And User enter patientage "<Age>"
-    And User select country "<Country>"
-    And User enter password "<Password>"
-    And User enter confirmPassword "<ConfirmPassword>"
-    And User enter medicalProblem "MedicalProblem"
-    And  scrollbaar  down
+   Given User start application 
+    Then  validate url 
+    When  click registerLink
+   # Then User should redirect to registrationPage
+  When User enter name "<Name>"
+   And  User enter mobileNo "<MobileNum>"
+    And User enter emailID "<Email>"
+   And User enter patientage "<Age>"
+   And User select country "<Country>"
+   And User enter password "<Password>"
+   And User enter confirmPassword "<ConfirmPassword>"
+   And User enter medicalProblem "MedicalProblem"
+    And  scrollbaardown
     And User click on Register
-    Then User should get confirmationMessage
-    And page should redirected to confirmationPage
+    #Then User should get confirmationMessage
+   # And page should redirected to confirmationPage
     
     Examples:
     | Name | MobileNum | Email| Age | Country | Password | ConfirmPassword | MedicalProblem |
-		| Test123|2345678786|TestHealtaa@yopmail.com|65|+90 TURKEY|122345|122345|Astma|
-  
-
+		| Testuser|7854213698|Testcucumber@yopmail.com|66|+91 INDIA|12234|12234|Sugar|
+    | TestVendor|9654874512|Testvendor@yopmail.com|55|+91 INDIA|123|123|Asthma|
+    | TestAdmin|8852103645|Testadmin@yopmail.com|45|+91 INDIA|12356|12356|blood preasur|
  

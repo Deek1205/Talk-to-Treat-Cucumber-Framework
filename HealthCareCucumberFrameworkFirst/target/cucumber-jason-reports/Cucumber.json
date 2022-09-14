@@ -1,354 +1,656 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-09-11T17:40:34.568Z",
-        "line": 3,
+        "start_timestamp": "2022-09-14T14:46:11.657Z",
+        "line": 25,
         "name": "Verify  registration  form with  valid TestData",
         "description": "",
-        "id": "verify-registration-functionality;verify--registration--form-with--valid-testdata",
+        "id": "verify---registration-functionality;verify--registration--form-with--valid-testdata;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2172521800,
+              "duration": 1786810700,
               "status": "passed"
             },
-            "line": 4,
-            "name": "User open browzer",
+            "line": 6,
+            "name": "User start application",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.user_open_browzer()"
+              "location": "stepDefinations.registration1.user_start_application()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 15423028000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User open url",
-            "match": {
-              "location": "stepDefinations.RegistrationExcution.user_open_url()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24006600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "validate url open",
-            "match": {
-              "location": "stepDefinations.RegistrationExcution.validate_url_open()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 178042000,
+              "duration": 51629506500,
               "status": "passed"
             },
             "line": 7,
-            "name": "User click on maxmize icon",
+            "name": "validate url",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.user_click_on_maxmize_icon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8401975900,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User click on registerLink",
-            "match": {
-              "location": "stepDefinations.RegistrationExcution.User_click_on_registerLink()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 21190800,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User should redirect to registrationPage",
-            "match": {
-              "location": "stepDefinations.RegistrationExcution.User_should_redirect_to_registrationPage()"
+              "location": "stepDefinations.registration1.validate_url()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 194299300,
+              "duration": 8369536500,
               "status": "passed"
             },
-            "line": 10,
-            "name": "User enter name",
+            "line": 8,
+            "name": "click registerLink",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.user_enter_name()"
+              "location": "stepDefinations.registration1.click_registerLink()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 196994400,
+              "duration": 115864000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter name \"Testuser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testuser\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110313400,
               "status": "passed"
             },
             "line": 11,
-            "name": "User enter mobileNo",
+            "name": "User enter mobileNo \"7854213698\"",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.user_enter_mobile_no()"
+              "arguments": [
+                {
+                  "val": "\"7854213698\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_mobile_no(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 214987400,
+              "duration": 126105200,
               "status": "passed"
             },
             "line": 12,
-            "name": "User enter email",
+            "name": "User enter emailID \"Testcucumber@yopmail.com\"",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.User_enter_email()"
+              "arguments": [
+                {
+                  "val": "\"Testcucumber@yopmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_email_id(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 154023500,
+              "duration": 84484800,
               "status": "passed"
             },
             "line": 13,
-            "name": "User enter patientage",
+            "name": "User enter patientage \"66\"",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.user_enter_patientage()"
+              "arguments": [
+                {
+                  "val": "\"66\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_patientage(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 213937900,
+              "duration": 99528800,
               "status": "passed"
             },
             "line": 14,
-            "name": "User select country",
+            "name": "User select country \"+91 INDIA\"",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.user_select_country()"
+              "arguments": [
+                {
+                  "val": "\"+91 INDIA\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinations.registration1.user_select_country(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 138184200,
+              "duration": 93538700,
               "status": "passed"
             },
             "line": 15,
-            "name": "User enter password",
+            "name": "User enter password \"12234\"",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.user_enter_password()"
+              "arguments": [
+                {
+                  "val": "\"12234\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_password(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 139522300,
+              "duration": 87776100,
               "status": "passed"
             },
             "line": 16,
-            "name": "User enter confirmPassword",
+            "name": "User enter confirmPassword \"12234\"",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.user_enter_confirm_password()"
+              "arguments": [
+                {
+                  "val": "\"12234\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_confirm_password(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 138741300,
+              "duration": 91994500,
               "status": "passed"
             },
             "line": 17,
-            "name": "User enter medicalProblem",
+            "name": "User enter medicalProblem \"MedicalProblem\"",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.user_enter_medical_problem()"
+              "arguments": [
+                {
+                  "val": "\"MedicalProblem\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_medical_problem(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 17427700,
+              "duration": 8162400,
               "status": "passed"
             },
             "line": 18,
-            "name": "scrollbaar  down",
+            "name": "scrollbaardown",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.scrollbaar_down()"
+              "location": "stepDefinations.registration1.scrollbaardown()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2232815200,
+              "duration": 1024111300,
               "status": "passed"
             },
             "line": 19,
-            "name": "User click on RegisterBtn",
+            "name": "User click on Register",
             "match": {
-              "location": "stepDefinations.RegistrationExcution.user_click_on_RegisterBtn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 95904300,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "validate loginRed button present on the page",
-            "match": {
-              "location": "stepDefinations.RegistrationExcution.validate_loginRed_button_present_on_the_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7454400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "page should redirected to confirmationPage",
-            "match": {
-              "location": "stepDefinations.RegistrationExcution.page_should_redirected_to_confirmation_page()"
+              "location": "stepDefinations.registration1.user_click_on_register()"
             },
             "keyword": "And "
           }
         ]
-      }
-    ],
-    "name": "Verify Registration Functionality",
-    "description": "",
-    "id": "verify-registration-functionality",
-    "keyword": "Feature",
-    "uri": "file:src/test/resource/features/Registration.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
+      },
       {
-        "start_timestamp": "2022-09-11T17:41:04.679Z",
-        "line": 3,
-        "name": "Verify login with  valid credentials",
+        "start_timestamp": "2022-09-14T14:47:15.410Z",
+        "line": 26,
+        "name": "Verify  registration  form with  valid TestData",
         "description": "",
-        "id": "verify-login-and-logout;verify-login-with--valid-credentials",
+        "id": "verify---registration-functionality;verify--registration--form-with--valid-testdata;;3",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 990812300,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User click on login button",
-            "match": {
-              "location": "stepDefinations.LoginExcution.user_click_on_login_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 6790300,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "validate login page url",
-            "match": {
-              "location": "stepDefinations.LoginExcution.validate_login_page_url()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 170141800,
               "status": "passed"
             },
             "line": 6,
-            "name": "User entered  emaili Id",
+            "name": "User start application",
             "match": {
-              "location": "stepDefinations.LoginExcution.user_entered_emaili_id()"
+              "location": "stepDefinations.registration1.user_start_application()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 144226200,
+              "duration": 1873377300,
               "status": "passed"
             },
             "line": 7,
-            "name": "User entered Paswword",
+            "name": "validate url",
             "match": {
-              "location": "stepDefinations.LoginExcution.user_entered_paswword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4061005000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User click on sign in button",
-            "match": {
-              "location": "stepDefinations.LoginExcution.user_click_on_sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7001300,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "validate home page url",
-            "match": {
-              "location": "stepDefinations.LoginExcution.validate_home_page_url()"
+              "location": "stepDefinations.registration1.validate_url()"
             },
             "keyword": "Then "
           },
           {
             "result": {
+              "duration": 3801209800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click registerLink",
+            "match": {
+              "location": "stepDefinations.registration1.click_registerLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100709900,
               "status": "passed"
             },
             "line": 10,
-            "name": "validate text Treament package",
+            "name": "User enter name \"TestVendor\"",
             "match": {
-              "location": "stepDefinations.LoginExcution.validate_text_Treament_package()"
+              "arguments": [
+                {
+                  "val": "\"TestVendor\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 109886800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enter mobileNo \"9654874512\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9654874512\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_mobile_no(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 125746800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enter emailID \"Testvendor@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testvendor@yopmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_email_id(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172144600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter patientage \"55\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"55\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_patientage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86689200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User select country \"+91 INDIA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"+91 INDIA\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinations.registration1.user_select_country(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82603700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter password \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83941500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter confirmPassword \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_confirm_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112971500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter medicalProblem \"MedicalProblem\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MedicalProblem\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_medical_problem(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10489600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "scrollbaardown",
+            "match": {
+              "location": "stepDefinations.registration1.scrollbaardown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2262591300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click on Register",
+            "match": {
+              "location": "stepDefinations.registration1.user_click_on_register()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-14T14:47:24.249Z",
+        "line": 27,
+        "name": "Verify  registration  form with  valid TestData",
+        "description": "",
+        "id": "verify---registration-functionality;verify--registration--form-with--valid-testdata;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User start application",
+            "match": {
+              "location": "stepDefinations.registration1.user_start_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1527527900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate url",
+            "match": {
+              "location": "stepDefinations.registration1.validate_url()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 708909300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click registerLink",
+            "match": {
+              "location": "stepDefinations.registration1.click_registerLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97861500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter name \"TestAdmin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TestAdmin\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100776900,
+              "status": "passed"
             },
             "line": 11,
-            "name": "validate",
-            "match": {},
+            "name": "User enter mobileNo \"8852103645\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"8852103645\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_mobile_no(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119603200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enter emailID \"Testadmin@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testadmin@yopmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_email_id(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82663900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter patientage \"45\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"45\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_patientage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88395600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User select country \"+91 INDIA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"+91 INDIA\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinations.registration1.user_select_country(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89001000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter password \"12356\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12356\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94485200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter confirmPassword \"12356\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12356\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_confirm_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112059900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter medicalProblem \"MedicalProblem\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MedicalProblem\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinations.registration1.user_enter_medical_problem(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6005100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "scrollbaardown",
+            "match": {
+              "location": "stepDefinations.registration1.scrollbaardown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4122157700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click on Register",
+            "match": {
+              "location": "stepDefinations.registration1.user_click_on_register()"
+            },
             "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Verify Login and Logout",
+    "name": "verify   registration functionality",
     "description": "",
-    "id": "verify-login-and-logout",
+    "id": "verify---registration-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resource/features/login.feature",
+    "uri": "file:src/test/resource/features/registration1.feature",
     "tags": []
   }
 ]

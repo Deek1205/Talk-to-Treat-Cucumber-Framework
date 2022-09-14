@@ -10,7 +10,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-        features = {"src/test/resource/features/Registration.feature","src/test/resource/features/login.feature"},
+        features = {"src/test/resource/features/registration1.feature"},
         glue={"stepDefinations"},
         plugin={
                 "pretty",

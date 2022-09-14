@@ -33,7 +33,8 @@ public class LoginExcution {
 
 	@When("User entered  emaili Id")
 	public void user_entered_emaili_id() {
-	   objLoginPage.enter_EmaiId();
+		
+	  objLoginPage.enter_EmaiId();
 	}
 
 	@When("User entered Paswword")

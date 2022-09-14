@@ -56,7 +56,7 @@ public class LoginPage {
 	}
 
 	public void enter_EmaiId() {
-		JavaBase.sendkeys(emailId, 0, PropertyReader.getDataProperty("email"));
+		JavaBase.random_EmailId(emailId, 0, PropertyReader.getDataProperty("email"));
 	}
 
 	public void enter_Password() {

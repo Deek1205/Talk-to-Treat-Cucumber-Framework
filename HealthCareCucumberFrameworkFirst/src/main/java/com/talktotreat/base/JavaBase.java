@@ -59,9 +59,34 @@ public class JavaBase {
 	public static WebDriver getDriver() {
    	 if(driver == null)
    	 {
-   		 WebDriverManager.chromedriver().setup();
-			 driver = new ChromeDriver();
-			 return driver;
+   		browzersave = PropertyReader.getConfigProperty("BrowserName"); // calling browzename
+   		
+   				if (browzersave.equalsIgnoreCase("chrome")) {
+   					WebDriverManager.chromedriver().setup();
+   					driver = new ChromeDriver();
+   				}
+   		
+   				else if (browzersave.equalsIgnoreCase("Firefox")) {
+   					WebDriverManager.firefoxdriver().setup();
+   					driver = new FirefoxDriver();
+   				}
+   		
+   				else if (browzersave.equalsIgnoreCase("Safari")) {
+   					WebDriverManager.safaridriver().setup();
+   					driver = new SafariDriver();
+   				}
+   		
+   				else {
+   		
+   					WebDriverManager.chromedriver().setup();
+   					driver = new ChromeDriver();
+   					
+   					
+   				}
+   				    driver.manage().window().maximize();
+					driver.manage().deleteAllCookies();
+   		
+   				return driver;
    	 }
   	 else {
    		 return driver;
@@ -131,11 +156,13 @@ public class JavaBase {
 	
 	
 	// Random Class
-	 public static void random_EmailId() {
+	 public static void random_EmailId(WebElement element, int timeout, String value) {
+		 WebElement	 element_withWait = new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOf(element));
 		 Random randomgenerator = new Random();
 		 int randomInt = randomgenerator.nextInt(1000);
 		 System.out.println("Random value are" +randomInt);
-		 driver.findElement( By.xpath("//input[@name='EmailId']")).sendKeys(PropertyReader.getDataProperty("email")+randomInt+"@gmail.com");
+		// driver.findElement( By.xpath("//input[@name='EmailId']")).sendKeys(PropertyReader.getDataProperty("email")+randomInt+"@gmail.com");
+		 element_withWait.sendKeys( randomInt+value);
 	 }
 	
 	

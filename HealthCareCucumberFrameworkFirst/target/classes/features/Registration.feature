@@ -19,3 +19,5 @@ Feature: Verify Registration Functionality
     And User click on RegisterBtn
     Then validate loginRed button present on the page
     And page should redirected to confirmationPage
+
+    

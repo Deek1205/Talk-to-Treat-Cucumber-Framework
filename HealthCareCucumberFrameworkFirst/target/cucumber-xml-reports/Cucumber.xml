@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="35.752">
-    <testcase classname="Verify Registration Functionality" name="Verify  registration  form with  valid TestData" time="30.069">
-        <system-out><![CDATA[Given User open browzer.....................................................passed
-And User open url...........................................................passed
-Then validate url open......................................................passed
-And User click on maxmize icon..............................................passed
-When User click on registerLink.............................................passed
-Then User should redirect to registrationPage...............................passed
-When User enter name........................................................passed
-And User enter mobileNo.....................................................passed
-And User enter email........................................................passed
-And User enter patientage...................................................passed
-And User select country.....................................................passed
-And User enter password.....................................................passed
-And User enter confirmPassword..............................................passed
-And User enter medicalProblem...............................................passed
-And scrollbaar  down........................................................passed
-And User click on RegisterBtn...............................................passed
-Then validate loginRed button present on the page...........................passed
-And page should redirected to confirmationPage..............................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="79.959">
+    <testcase classname="verify   registration functionality" name="Verify  registration  form with  valid TestData" time="63.732">
+        <system-out><![CDATA[Given User start application................................................passed
+Then validate url...........................................................passed
+When click registerLink.....................................................passed
+When User enter name "Testuser".............................................passed
+And User enter mobileNo "7854213698"........................................passed
+And User enter emailID "Testcucumber@yopmail.com"...........................passed
+And User enter patientage "66"..............................................passed
+And User select country "+91 INDIA".........................................passed
+And User enter password "12234".............................................passed
+And User enter confirmPassword "12234"......................................passed
+And User enter medicalProblem "MedicalProblem"..............................passed
+And scrollbaardown..........................................................passed
+And User click on Register..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Verify Login and Logout" name="Verify login with  valid credentials" time="5.394">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When User click on login button.............................................passed
-Then validate login page url................................................passed
-When User entered  emaili Id................................................passed
-And User entered Paswword...................................................passed
-And User click on sign in button............................................passed
-Then validate home page url.................................................passed
-And validate text Treament package..........................................passed
-And validate................................................................undefined
-]]></failure>
+    <testcase classname="verify   registration functionality" name="Verify  registration  form with  valid TestData 2" time="8.83">
+        <system-out><![CDATA[Given User start application................................................passed
+Then validate url...........................................................passed
+When click registerLink.....................................................passed
+When User enter name "TestVendor"...........................................passed
+And User enter mobileNo "9654874512"........................................passed
+And User enter emailID "Testvendor@yopmail.com".............................passed
+And User enter patientage "55"..............................................passed
+And User select country "+91 INDIA".........................................passed
+And User enter password "123"...............................................passed
+And User enter confirmPassword "123"........................................passed
+And User enter medicalProblem "MedicalProblem"..............................passed
+And scrollbaardown..........................................................passed
+And User click on Register..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verify   registration functionality" name="Verify  registration  form with  valid TestData 3" time="7.154">
+        <system-out><![CDATA[Given User start application................................................passed
+Then validate url...........................................................passed
+When click registerLink.....................................................passed
+When User enter name "TestAdmin"............................................passed
+And User enter mobileNo "8852103645"........................................passed
+And User enter emailID "Testadmin@yopmail.com"..............................passed
+And User enter patientage "45"..............................................passed
+And User select country "+91 INDIA".........................................passed
+And User enter password "12356".............................................passed
+And User enter confirmPassword "12356"......................................passed
+And User enter medicalProblem "MedicalProblem"..............................passed
+And scrollbaardown..........................................................passed
+And User click on Register..................................................passed
+]]></system-out>
     </testcase>
 </testsuite>
