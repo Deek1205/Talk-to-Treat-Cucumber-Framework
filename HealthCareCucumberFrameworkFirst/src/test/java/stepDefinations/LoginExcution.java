@@ -57,5 +57,17 @@ public class LoginExcution {
 	       // objLoginPage.validateText_treamantPackage();;
 	}
 	
+	
+	    // Doctor Appoitment Functionality //
+
+	@Then("user click on doctor Link")
+	public void user_click_on_doctor_link() {
+	    objLoginPage.clickon_doctorLink();
+	}
+
+	@Then("Scroll the page")
+	public void scroll_the_page() {
+		JavaBase.scrollDown(70);
+	}
 
 }

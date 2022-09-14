@@ -1,14 +1,23 @@
+@mustRun
 Feature: Verify Login and Logout
 
-  Scenario: Verify login with  valid credentials
+
+Background:
     When User click on login button
-    Then validate login page url
     When User entered  emaili Id
     And User entered Paswword
     And User click on sign in button
-    Then validate home page url
-    And validate text Treament package
-    And validate 
+
+  @Smoke
+  Scenario: Verify login with  valid credentials
+      Then validate login page url
+      Then validate home page url
+      And validate text Treament package
+    
+   @Smoke
+  Scenario: Verify doctor appoitment functionality
+       Then user click on doctor Link
+       Then Scroll the page    
     
    # Scenario: Verify logout
     #When User mousehover on mail dropdown link

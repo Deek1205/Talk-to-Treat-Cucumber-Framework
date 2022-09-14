@@ -58,56 +58,56 @@ public class RegistrationExcution {
 
 	@When("User enter name")
 	public void user_enter_name() {
-		registrationPageObj.enter_Name(PropertyReader.getDataProperty("name"));
+		registrationPageObj.enter_Name();
 
 	}
 
 	@And("User enter mobileNo")
 	public void user_enter_mobile_no() {
-		//registrationPageObj.enter_MobileNo();
+		registrationPageObj.enter_MobileNo();
 	}
 
 	@And("User enter email")
 	public void User_enter_email() {
-		//registrationPageObj.enter_Email();
+		registrationPageObj.enter_Email();
 	}
 
 	@And("User enter patientage")
 	public void user_enter_patientage() {
-		//registrationPageObj.enter_PatientAge();
+		registrationPageObj.enter_PatientAge();
 	}
 
 	@And("User select country")
 	public void user_select_country() {
 
-		//registrationPageObj.select_country();
+		registrationPageObj.select_country();
 
 	}
 
 	@And("User enter password")
 	public void user_enter_password() {
-		//registrationPageObj.enter_Password();
+		registrationPageObj.enter_Password();
 	}
 
 	@And("User enter confirmPassword")
 	public void user_enter_confirm_password() {
-		//registrationPageObj.enter_confrimPassword();
+		registrationPageObj.enter_confrimPassword();
 	}
 
 	@And("User enter medicalProblem")
 	public void user_enter_medical_problem() {
-		//registrationPageObj.enter_medicalProlem();
+		registrationPageObj.enter_medicalProlem();
 	}
 
 	@And("scrollbaar  down")
 	public void scrollbaar_down() {
-		//JavaBase.scrollDown(70);
+		JavaBase.scrollDown(70);
 
 	}
 
 	@And("User click on RegisterBtn")
 	public void user_click_on_RegisterBtn() {
-		//registrationPageObj.clickOn_RegisterBtn();
+		registrationPageObj.clickOn_RegisterBtn();
 	}
 
 	@Then("validate loginRed button present on the page")

@@ -35,6 +35,9 @@ public class LoginPage {
 
 	@FindBy(xpath="//a[@href=\"/Login/Logout\"]")
 	WebElement logout;
+	
+	@FindBy(xpath="//a[text()='Doctors']")
+	WebElement DoctorLink;
 
           //construtor driver comeing from login page , becuase we use inint method from page dfactoiry
 	   // login excution main get drivet ko call kiya hain put single class main java base , chek karayga yadee chrome driver
@@ -56,7 +59,8 @@ public class LoginPage {
 	}
 
 	public void enter_EmaiId() {
-		JavaBase.random_EmailId(emailId, 0, PropertyReader.getDataProperty("email"));
+		//JavaBase.random_EmailId(emailId, 0, PropertyReader.getDataProperty("email"));
+		JavaBase.sendkeys(emailId, 0, PropertyReader.getDataProperty("email"));
 	}
 
 	public void enter_Password() {
@@ -74,7 +78,9 @@ public class LoginPage {
 	}
 
 	
-
+   public void clickon_doctorLink() {
+	   JavaBase.clickOn(DoctorLink, 0);
+   }
 
 
 

@@ -1,5 +1,7 @@
+@mustRun
 Feature: Verify Registration Functionality
 
+  @Regression
   Scenario: Verify  registration  form with  valid TestData
     Given User open browzer
     And User open url
